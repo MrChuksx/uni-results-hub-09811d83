@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, FileDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const smoothScroll = (e: React.MouseEvent, href: string) => {
+  e.preventDefault();
+  const el = document.querySelector(href);
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+};
 
 const HeroSection = () => {
   return (
@@ -34,24 +40,33 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.div
-          className="flex items-center justify-center gap-4"
+          className="flex items-center justify-center gap-4 flex-wrap"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          <Button size="lg" className="font-mono text-sm">
-            <Mail className="mr-2 h-4 w-4" /> Get In Touch
+          <Button size="lg" className="font-mono text-sm" asChild>
+            <a href="#contact" onClick={(e) => smoothScroll(e, "#contact")}>
+              Get In Touch
+            </a>
           </Button>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" size="icon" className="border-border hover:border-primary hover:text-primary">
-              <Github />
-            </Button>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" size="icon" className="border-border hover:border-primary hover:text-primary">
-              <Linkedin />
-            </Button>
-          </a>
+          <Button variant="outline" size="lg" className="font-mono text-sm border-border hover:border-primary hover:text-primary" asChild>
+            <a href="/resume.pdf" download>
+              <FileDown className="mr-2 h-4 w-4" /> Resume
+            </a>
+          </Button>
+          <div className="flex gap-2">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon" className="border-border hover:border-primary hover:text-primary">
+                <Github />
+              </Button>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon" className="border-border hover:border-primary hover:text-primary">
+                <Linkedin />
+              </Button>
+            </a>
+          </div>
         </motion.div>
 
         <motion.div
@@ -59,7 +74,9 @@ const HeroSection = () => {
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
-          <ArrowDown className="h-5 w-5 text-muted-foreground" />
+          <a href="#about" onClick={(e) => smoothScroll(e, "#about")}>
+            <ArrowDown className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors cursor-pointer" />
+          </a>
         </motion.div>
       </div>
     </section>
