@@ -18,10 +18,10 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="text-primary font-mono text-sm tracking-wider mb-4">
-            Hi, my name is
+            Hi, I'm Mr Chuks 👋
           </p>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
-            John Doe
+            Uchechukwu<br className="hidden md:block" /> Godspower
           </h1>
           <h2 className="text-2xl md:text-4xl font-semibold text-muted-foreground mb-6">
             I build things for the web.

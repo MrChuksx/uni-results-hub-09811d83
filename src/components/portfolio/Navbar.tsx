@@ -25,7 +25,7 @@ const Navbar = () => {
     >
       <nav className="max-w-5xl mx-auto flex items-center justify-between">
         <a href="#" className="text-xl font-bold text-primary font-mono">
-          JD
+          MC
         </a>
         <ul className="hidden md:flex items-center gap-8">
           {navItems.map((item, i) => (

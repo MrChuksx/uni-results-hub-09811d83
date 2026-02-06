@@ -19,7 +19,7 @@ const ContactSection = () => {
             Whether you have a question or just want to say hi, I'll do my best 
             to get back to you!
           </p>
-          <a href="mailto:hello@johndoe.com">
+          <a href="mailto:hello@mrchuks.com">
             <Button size="lg" className="font-mono text-sm">
               <Mail className="mr-2 h-4 w-4" /> Say Hello
             </Button>
