@@ -4,27 +4,27 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Guidora — Career Compass",
     description:
-      "A full-stack e-commerce application with payment integration, product management, and a responsive storefront.",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    github: "#",
+      "An AI-powered career guidance platform that helps users discover career paths, get personalized recommendations, and plan their professional journey with intelligent insights.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    github: "https://github.com/MrChuksx/guidora-your-career-compass",
     live: "#",
   },
   {
-    title: "Task Management App",
+    title: "UniResults Hub",
     description:
-      "A collaborative task manager with real-time updates, drag-and-drop boards, and team workspaces.",
-    tech: ["TypeScript", "React", "Supabase", "Tailwind"],
-    github: "#",
+      "A university results management system for students to check grades, track academic performance, and access result breakdowns in a clean, organized interface.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    github: "https://github.com/MrChuksx/uni-results-hub-09811d83",
     live: "#",
   },
   {
-    title: "AI Chat Interface",
+    title: "MrChuks Org — AI Studio",
     description:
-      "An AI-powered chat application with streaming responses, conversation history, and markdown rendering.",
-    tech: ["Next.js", "OpenAI", "Prisma", "Vercel"],
-    github: "#",
+      "An organizational hub built from Google Gemini's AI Studio template, showcasing AI integration capabilities and prompt engineering workflows.",
+    tech: ["TypeScript", "React", "Google Gemini", "Vercel"],
+    github: "https://github.com/MrChuksx/MrChuksx-s-Org",
     live: "#",
   },
 ];

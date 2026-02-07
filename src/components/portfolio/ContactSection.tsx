@@ -37,7 +37,7 @@ const ContactSection = () => {
     // Open mail client with pre-filled fields
     const subject = encodeURIComponent(`Portfolio Contact from ${form.name}`);
     const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`);
-    window.open(`mailto:hello@mrchuks.com?subject=${subject}&body=${body}`, "_self");
+    window.open(`mailto:uchechukwugodspower6@gmail.com?subject=${subject}&body=${body}`, "_self");
     setSent(true);
     setForm({
       name: "",
@@ -102,7 +102,7 @@ const ContactSection = () => {
 
           <p className="text-center text-xs text-muted-foreground mt-6">
             Or email me directly at{" "}
-            <a href="mailto:hello@mrchuks.com" className="text-primary hover:underline">uchechukwugodspower6@gmail.com</a>
+            <a href="mailto:uchechukwugodspower6@gmail.com" className="text-primary hover:underline">uchechukwugodspower6@gmail.com</a>
           </p>
         </motion.div>
       </div>

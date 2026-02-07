@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, FileDown } from "lucide-react";
+import { ArrowDown, Github, Linkedin, FileDown, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const smoothScroll = (e: React.MouseEvent, href: string) => {
@@ -56,14 +56,24 @@ const HeroSection = () => {
             </a>
           </Button>
           <div className="flex gap-2">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/MrChuksx" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="icon" className="border-border hover:border-primary hover:text-primary">
                 <Github />
               </Button>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/godspower-uchechukwu-69a200397" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="icon" className="border-border hover:border-primary hover:text-primary">
                 <Linkedin />
+              </Button>
+            </a>
+            <a href="https://x.com/mrchuks_" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon" className="border-border hover:border-primary hover:text-primary">
+                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </Button>
+            </a>
+            <a href="https://www.instagram.com/bluestoneon" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon" className="border-border hover:border-primary hover:text-primary">
+                <Instagram />
               </Button>
             </a>
           </div>
