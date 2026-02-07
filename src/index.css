@@ -65,3 +65,7 @@
     font-family: 'JetBrains Mono', monospace;
   }
 }
+
+#lovable-badge {
+  display: none !important;
+}
