@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  "JavaScript", "TypeScript", "React", "Node.js",
-  "Python", "PostgreSQL", "Tailwind CSS", "Docker",
+  "JavaScript", "TypeScript", "React", "Tailwind CSS",
+  "Prompt Engineering", "AI Tools", "Vite", "Git",
 ];
 
 const AboutSection = () => {
@@ -21,16 +21,16 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-[3fr_2fr] gap-12">
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Hello! I'm a developer who loves crafting digital experiences that live 
-                on the internet. My interest in web development started back in 2016 
-                when I decided to try building custom themes — turns out hacking 
-                together HTML & CSS taught me a lot!
+                Hello! I'm a developer and prompt engineer who builds digital 
+                products using AI-powered tools. I leverage platforms like Lovable, 
+                Google Gemini, and other AI assistants to rapidly prototype and 
+                ship production-ready web applications.
               </p>
               <p>
-                Fast-forward to today, I've had the privilege of working at a startup, 
-                a large corporation, and a student-led design studio. My main focus 
-                these days is building accessible, inclusive products and digital 
-                experiences.
+                My approach combines strong prompt engineering skills with modern 
+                web technologies to create polished, functional products in record 
+                time. I'm passionate about exploring the intersection of AI and 
+                development, turning ideas into reality faster than ever.
               </p>
             </div>
 
